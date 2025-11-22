@@ -2,6 +2,50 @@
 
 All notable changes to `filament-menu-builder` will be documented in this file.
 
+## v4.0.5 - 2025-11-21
+
+### Added
+
+* Dynamic model configuration support for `Menu` and `MenuItem`
+* Explicit parent menu selection in Menu Item Resource
+* Dynamic retrieval of Filament resource classes, enabling customized `MenuItemForm` schemas
+
+### Testing
+
+* Added `TestPanelProvider`
+* Refactored plugin retrieval for more reliable test behavior
+
+### Maintenance
+
+* Updated `esbuild` to `0.25.0`
+* Added `.phpunit.result.cache` to `.gitignore`
+* Added missing PHPDoc type hints
+* Code style cleanup
+* Updated CHANGELOG
+
+### Credits
+
+* Merged PR #15 by @bengs: Dynamic retrieval of `MenuItemResource`
+
+## v4.0.3 - 2025-11-22
+
+### v4.0.3 - Dynamic Models & Resource Improvements
+
+#### Features
+
+- Added dynamic model configuration for Menu and MenuItem models.
+- Enabled explicit parent menu selection for menu items in the resource.
+
+#### Improvements
+
+- Dynamically retrieve Filament resource classes from the plugin.
+- Refactored plugin retrieval in `FilamentMenuBuilderPlugin`.
+- Added `TestPanelProvider` for better testing infrastructure.
+
+#### Bug Fixes
+
+- Fixed menu item form resource access (PR #15).
+
 ## v4.0.2 - 2025-11-03
 
 ### v4.0.2 - Bug Fixes & Stability Improvements
@@ -29,6 +73,7 @@ All notable changes to `filament-menu-builder` will be documented in this file.
 
 ```bash
 composer update biostate/filament-menu-builder
+
 
 ```
 #### New Contributors
